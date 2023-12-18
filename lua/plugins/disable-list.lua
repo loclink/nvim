@@ -9,10 +9,10 @@ return {
   --   enabled = false,
   -- },
   -- 为了使用tabout 这里禁用了LuaSnip中映射的tab键和S-Tab键
-  {
-    "L3MON4D3/LuaSnip",
-    keys = function()
-      return {}
-    end,
-  },
+  -- {
+  --   "L3MON4D3/LuaSnip",
+  --   keys = function()
+  --     return {}
+  --   end,
+  -- },
 }

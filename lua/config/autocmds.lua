@@ -15,8 +15,17 @@ autocmd("InsertEnter", {
   callback = require("utils.im-select").macInsertEnter,
 })
 
+-- autocmd({ "BufWritePost" }, {
+--   pattern = { "*.ts", "*.tsx", "*.js", "*.jsx" },
+--   group = myAutoGroup,
+--   callback = function()
+--     vim.cmd("TSToolsAddMissingImports")
+--     -- userManagementDealer  vim.cmd("TSToolsOrganizeImports")
+--   end,
+-- })
+
 -- json文件不隐藏双引号
-vim.api.nvim_create_autocmd({ "FileType" }, {
+autocmd({ "FileType" }, {
   pattern = { "json", "jsonc", "markdown" },
   callback = function()
     vim.wo.conceallevel = 0

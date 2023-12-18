@@ -13,6 +13,6 @@ return {
     end)
   end,
   keys = {
-    { "<leader>fp", "<Cmd>Telescope projects<CR>", desc = "Find Projects" },
+    { "<leader>fp", "<Cmd>Telescope projects<CR>", desc = "查询项目列表" },
   },
 }
