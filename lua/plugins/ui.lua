@@ -30,15 +30,15 @@ return {
   },
 
   -- status line
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = {
-      options = {
-        theme = "solarized_dark",
-      },
-    },
-  },
+  -- {
+  --   "nvim-lualine/lualine.nvim",
+  --   event = "VeryLazy",
+  --   opts = {
+  --     options = {
+  --       theme = "solarized_dark",
+  --     },
+  --   },
+  -- },
 
   -- floating status bar
   {

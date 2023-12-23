@@ -1,8 +1,8 @@
 return {
-  {
-    "folke/flash.nvim",
-    enabled = false,
-  },
+  -- {
+  --   "folke/flash.nvim",
+  --   enabled = false,
+  -- },
   -- 以下默认插件将被禁用
   -- {
   --   "rcarriga/nvim-notify",
