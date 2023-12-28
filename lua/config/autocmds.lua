@@ -5,6 +5,12 @@
 local myAutoGroup = vim.api.nvim_create_augroup("myAutoGroup", { clear = true })
 local autocmd = vim.api.nvim_create_autocmd
 
+-- autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
+--   callback = function()
+--     require("lint").try_lint()
+--   end,
+-- })
+
 -- 自动切换输入法
 autocmd("InsertLeave", {
   group = myAutoGroup,

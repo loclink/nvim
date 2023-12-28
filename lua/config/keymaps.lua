@@ -5,4 +5,4 @@
 local Util = require("lazyvim.util")
 local map = Util.safe_keymap_set
 
-map("n", "<D-c><c-a>", "ggVG", { desc = "全选", noremap = true, silent = true })
+map("n", "<c-a>", "ggVG", { desc = "全选", noremap = true, silent = true })

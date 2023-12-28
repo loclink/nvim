@@ -15,6 +15,16 @@ return {
       })
     end,
   },
+
+  -- {
+  --   "mfussenegger/nvim-lint",
+  --   opts = {
+  --     events = { "BufEnter", "BufWritePost", "BufReadPost", "InsertLeave" },
+  --     linters_by_ft = {
+  --       fish = { "fish" },
+  --     },
+  --   },
+  -- },
   -- {
   --   "pmizio/typescript-tools.nvim",
   --   dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
