@@ -26,7 +26,7 @@ return {
         header = vim.split(logo, "\n"),
       -- stylua: ignore
         center = {
-          { action = "Telescope projects",                                       desc = " Find Project",    icon = " ", key = "p" },
+          { action = "Telescope projects",                                       desc = " Find Projects",    icon = " ", key = "p" },
           { action = "Telescope live_grep",                                      desc = " Find text",       icon = " ", key = "g" },
           { action = [[lua require("lazyvim.util").telescope.config_files()()]], desc = " Config",          icon = " ", key = "c" },
           { action = 'lua require("persistence").load()',                        desc = " Restore Session", icon = " ", key = "s" },

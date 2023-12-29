@@ -21,4 +21,4 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## Screenshot
 
-![screenshot]('https://github.com/loclink/nvim/blob/master/screenshot.jpg')
+![Screenshot](https://raw.githubusercontent.com/loclink/loclink/master/img/20231229135044.png)
