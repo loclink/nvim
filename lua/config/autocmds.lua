@@ -21,6 +21,15 @@ autocmd("InsertEnter", {
   callback = require("utils.im-select").macInsertEnter,
 })
 
+-- 关闭默认的单词校验
+vim.api.nvim_create_autocmd("FileType", {
+  group = "lazyvim_wrap_spell",
+  pattern = { "gitcommit", "markdown" },
+  callback = function()
+    vim.opt_local.wrap = false
+    vim.opt_local.spell = false
+  end,
+})
 -- autocmd({ "BufWritePost" }, {
 --   pattern = { "*.ts", "*.tsx", "*.js", "*.jsx" },
 --   group = myAutoGroup,
