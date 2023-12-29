@@ -4,6 +4,7 @@
 
 - [Neovim Configure](#neovim-configure)
   - [Development environment](#development-environment)
+  - [Screenshot](#screenshot)
   <!--toc:end-->
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
@@ -20,4 +21,4 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## Screenshot
 
-![screenshot]('./screenshot.jpg')
+![screenshot]('https://github.com/loclink/nvim/blob/master/screenshot.jpg')
