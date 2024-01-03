@@ -1,4 +1,5 @@
 return {
+  -- 搜索
   {
     "telescope.nvim",
     dependencies = {

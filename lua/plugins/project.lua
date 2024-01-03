@@ -1,3 +1,4 @@
+-- 搜索项目
 return {
   "ahmedkhalf/project.nvim",
   opts = {

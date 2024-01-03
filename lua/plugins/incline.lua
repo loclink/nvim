@@ -1,3 +1,4 @@
+-- 浮动状态栏
 return {
   "b0o/incline.nvim",
   dependencies = { "craftzdog/solarized-osaka.nvim" },
