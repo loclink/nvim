@@ -1,17 +1,5 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  branch = "v3.x",
-  deactivate = function()
-    vim.cmd([[Neotree close]])
-  end,
-  init = function()
-    if vim.fn.argc(-1) == 1 then
-      local stat = vim.loop.fs_stat(vim.fn.argv(0))
-      if stat and stat.type == "directory" then
-        require("neo-tree")
-      end
-    end
-  end,
   opts = {
     source_selector = {
       winbar = true,
@@ -21,6 +9,7 @@ return {
       bind_to_cwd = true,
       follow_current_file = { enabled = true },
       use_libuv_file_watcher = true,
+      async_directory_scan = "always",
     },
     window = {
       mappings = {
@@ -48,6 +37,18 @@ return {
           staged = "",
           conflict = "",
         },
+      },
+    },
+    event_handlers = {
+
+      {
+        event = "file_opened",
+        handler = function()
+          -- auto close
+          -- vimc.cmd("Neotree close")
+          -- OR
+          require("neo-tree.command").execute({ action = "close" })
+        end,
       },
     },
   },
