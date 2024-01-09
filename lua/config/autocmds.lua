@@ -30,14 +30,6 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.spell = false
   end,
 })
--- autocmd({ "BufWritePost" }, {
---   pattern = { "*.ts", "*.tsx", "*.js", "*.jsx" },
---   group = myAutoGroup,
---   callback = function()
---     vim.cmd("TSToolsAddMissingImports")
---     -- userManagementDealer  vim.cmd("TSToolsOrganizeImports")
---   end,
--- })
 
 -- json文件不隐藏双引号
 autocmd({ "FileType" }, {
