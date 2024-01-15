@@ -31,7 +31,7 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- json文件不隐藏双引号
+-- json 以及 markdown 文件不隐藏双引号
 autocmd({ "FileType" }, {
   pattern = { "json", "jsonc", "markdown" },
   callback = function()

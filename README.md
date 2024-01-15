@@ -16,7 +16,6 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 - typescript
 - react
 - vue
-- rust
 - lua
 
 ## Screenshot
