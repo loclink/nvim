@@ -10,7 +10,7 @@ return {
   end,
   keys = {
     {
-      "<leader>ci",
+      "<leader>cb",
       "<cmd>lua require('alternate-toggler').toggleAlternate()<CR>",
       mode = { "n" },
       desc = "toggle boolean",
